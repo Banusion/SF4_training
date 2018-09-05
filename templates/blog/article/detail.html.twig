@@ -1,0 +1,63 @@
+{# EXTENSION DU LAYOUT #}
+    {% extends 'layout.html.twig' %}
+
+{# TITRE DE LA PAGE #}
+    {% block title_page_content %}
+        {% trans_default_domain 'ste_blog' %}
+        {{ parent() }}
+        {{ 'post.detail.page_title'|trans|upper }}
+    {% endblock %}
+
+{# CONTENU DE LA PAGE #}
+    {% block page_content %}
+        {% trans_default_domain 'ste_blog' %}
+
+        <div>
+            <table class="table">
+                <tr>
+                    <th>{{ 'post.detail.article_id'|trans|upper }} :</th>
+                    <td>{{ article.id }}</td>
+                </tr>
+                <tr>
+                    <th>{{ 'post.detail.article_title'|trans|upper }} :</th>
+                    <td>{{ article.title }}</td>
+                </tr>
+                <tr>
+                    <th>{{ 'post.detail.article_author'|trans|upper }} :</th>
+                    <td>{{ article.author}}</td>
+                </tr>
+                <tr>
+                    <th>Date :</th>
+                    <td>{{ article.date|date('Y-m-d H:i:s') }}</td>
+                </tr>
+                <tr>
+                    <th>{{ 'post.detail.article_description'|trans|upper }} :</th>
+                    <td>{{ article.description }}</td>
+                </tr>
+                <tr>
+                    <th>{{ 'post.detail.article_text'|trans|upper }} :</th>
+                    <td>{{ article.text }}</td>
+                </tr>
+
+            </table>
+        </div>
+
+        <div class="text-center">
+            <a href="{{ path('article_list') }}">
+                <button type="button" class="btn btn-info btn-sm"><span class="glyphicon glyphicon-list"></span>
+                </button>
+            </a>
+            <a href="{{ path('article_update', { 'id': article.id } ) }}">
+                <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-pencil"></span>
+                </button>
+            </a>
+            <a href="{{ path('article_delete', { 'id': article.id } ) }}">
+                <button type="button" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-trash"></span>
+                </button>
+            </a>
+        </div>
+
+
+    {% endblock %}
+
+

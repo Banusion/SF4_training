@@ -1,0 +1,21 @@
+{# EXTENSION DU LAYOUT #}
+    {% extends 'layout.html.twig' %}
+
+{# TITRE DE LA PAGE #}
+    {% block title_page_content %}
+        {% trans_default_domain 'default' %}
+
+        {{ parent() }}
+        {{ 'contact.title'|trans|upper }}
+    {% endblock %}
+
+{# CONTENU DE LA PAGE #}
+    {% block page_content %}
+        {% trans_default_domain 'default' %}
+
+        {{ 'contact.title'|trans }}
+
+
+    {% endblock %}
+
+

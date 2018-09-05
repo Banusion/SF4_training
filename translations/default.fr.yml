@@ -1,0 +1,37 @@
+nav:
+    about:          "A propos"
+    admin:          "Admin"
+    terms:          "Règlement"
+    home:           "Accueil"
+    contact:        "Contact"
+    language:       "Langue"
+    posts:          "Articles"
+    authors:          "Auteurs"
+
+template:
+    title_page:     "Titre : "
+
+action:
+    show:   "Afficher"
+    update: "Modifier"
+    delete: "Supprimer"
+    create: "Créer"
+
+terms:
+    title:     "Règlement"
+
+contact:
+    title:     "Contact"
+
+home:
+    title:          "Accueil"
+    welcome:        "Bienvenue"
+    description:    "Ceci est ma première application web développée avec Symfony"
+    english:        "Version Anglaise"
+    francais:       "Version Française"
+
+about:
+    title:          "A propos de moi..."
+    whoami:         "Je suis développeur web"
+    context:        "J'apprends à créer des applications web avec Symfony !"
+    cool:           "Et c'est cool :)"

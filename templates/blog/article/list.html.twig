@@ -1,0 +1,18 @@
+    {% extends 'layout.html.twig' %}
+
+    {% block title_page_content %}
+        {% trans_default_domain 'ste_blog' %}
+        {{ parent() }}
+        {{ 'post.list.page_title'|trans|upper }}
+    {% endblock %}
+
+    {% block page_content %}
+        {% trans_default_domain 'ste_blog' %}
+        {{ include('blog/article/list_content.html.twig') }}
+
+        <div class="text-center">
+            <a class="btn btn-warning btn-md" href="{{ path('article_create') }}">
+                <span class="glyphicon glyphicon-plus"></span> {{ 'post.list.create'|trans|upper }}
+            </a>
+        </div>
+    {% endblock %}

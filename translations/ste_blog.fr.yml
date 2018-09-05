@@ -1,0 +1,64 @@
+post:
+    action:
+        list:           "Lister"
+        show:           "Afficher"
+        update:         "Modifier"
+        create:         "Ajouter"
+        delete:         "Supprimer"
+
+    list:
+        page_title:          "Liste des articles"
+        create:         "Ajouter un article"
+        article_author:  "Auteur"
+        article_title:  "Titre"
+        article_date:   "Date"
+        count:   "Nombre d'articles"
+
+    detail:
+        page_title:          "Détail d'un article"
+        article_id:     "ID"
+        article_title:  "Titre"
+        article_article: "Auteur"
+        article_date:   "Date"
+        article_description:   "Résumé"
+        article_text:   "Texte"
+
+    update:
+        page_title:         "Modifier un article"
+        show:          "Afficher"
+        list:          "Liste"
+
+    create:
+        page_title:         "Ajouter un article"
+
+    error:
+        min: "Trop court !!!"
+        
+author:
+    action:
+        list:           "Lister"
+        show:           "Afficher"
+        update:         "Modifier"
+        create:         "Ajouter"
+        delete:         "Supprimer"
+
+    list:
+        page_title:          "Liste des auteurs"
+        create:         "Ajouter un auteur"
+        author_firstname:  "Prénom"
+        author_lastname:  "Nom"
+        count:          "Nombre d'auteurs"
+
+    detail:
+        page_title:          "Détail d'un auteur"
+        author_id:     "ID"
+        author_firstname:  "Prénom"
+        author_lastname:  "Nom"
+
+    update:
+        page_title:         "Modifier un auteur"
+        show:          "Afficher"
+        list:          "Liste"
+
+    create:
+        page_title:         "Ajouter un auteur"

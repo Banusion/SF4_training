@@ -1,0 +1,37 @@
+nav:
+    about:          "About"
+    home:           "Home"
+    language:       "Language"
+    admin:          "Admin"
+    terms:          "Terms"
+    contact:        "Contact"
+    posts:          "Posts"
+    authors:          "Authors"
+
+template:
+    title_page:     "Title : "
+
+action:
+    show:   "Display"
+    update: "Update"
+    delete: "Delete"
+    create: "Create"
+
+terms:
+    title:     "Terms"
+
+contact:
+    title:     "Contact"
+
+home:
+    title:          "Home"
+    welcome:        "Welcome"
+    description:    "This is my first web app powered by Symfony"
+    english:        "English version"
+    francais:       "French version"
+
+about:
+    title:          "About me..."
+    whoami:         "I am web developer"
+    context:        "I am learning to build web app powered by Symfony !"
+    cool:           "So cool :)"

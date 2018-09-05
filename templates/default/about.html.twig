@@ -1,0 +1,31 @@
+{# EXTENSION DU LAYOUT #}
+    {% extends 'layout.html.twig' %}
+
+{# TITRE DE LA PAGE #}
+    {% block title_page_content %}
+        {% trans_default_domain 'default' %}
+
+        {{ parent() }}
+        {{ 'about.title'|trans|upper }}
+    {% endblock %}
+
+{# CONTENU DE LA PAGE #}
+    {% block page_content %}
+        {% trans_default_domain 'default' %}
+
+        {# BIENVENUE #}
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h2>{{ 'about.whoami'|trans }}</h2>
+                <h3>
+                    {{ 'about.context'|trans }}
+                    <br>
+                    <br>
+                    <b>{{ 'about.cool'|trans }}</b>
+                </h3>
+            </div>
+        </div>
+
+    {% endblock %}
+
+

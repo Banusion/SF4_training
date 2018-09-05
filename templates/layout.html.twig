@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {# TITLE #}
+    <TITLE>MON APPLICATION</title>
+
+    {# META #}
+    <meta charset="utf-8">
+
+    {# CSS#}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    {# Javascript #}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+{# MENU #}
+{% include 'default/menu.html.twig' %}
+
+<div class="container">
+
+    {# PAGE TITLE #}
+    <H2 class="text-center">
+        <b>
+            {%  block title_page_content %}
+                {{ 'template.title_page'|trans({}, 'default')|upper }}
+            {%  endblock %}
+        </b>
+    </H2>
+
+    {# PAGE CONTENT #}
+
+    {%  block page_content %}
+    {%  endblock %}
+
+</div>
+</body>
+</html>

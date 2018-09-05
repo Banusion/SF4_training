@@ -1,0 +1,43 @@
+{# EXTENSION DU LAYOUT #}
+    {% extends 'layout.html.twig' %}
+
+{# TITRE DE LA PAGE #}
+    {% block title_page_content %}
+        {% trans_default_domain 'default' %}
+
+        {{ parent() }}
+        {{ 'home.title'|trans|upper }}
+    {% endblock %}
+
+{# CONTENU DE LA PAGE #}
+    {% block page_content %}
+        {% trans_default_domain 'default' %}
+        {# BIENVENUE #}
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h1>{{ 'home.welcome'|trans }} !</h1>
+                <p>
+                    {{ 'home.description'|trans }}
+                </p>
+                <br>
+                <br>
+                <p class="label label-danger text-center">
+                    <b>Ci-dessous une image doit apparaitre</b>
+                </p>
+
+                {#<img src="{{ asset('welcome-demo.gif', 'app_images') }}">#}
+                <div><img src="{{ asset('assets/images/welcome-demo.gif') }}"></div>
+
+                <br>
+                <br>
+                <p>
+                    <a class="btn btn-primary btn-lg" href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'en'})) }}" role="button">{{ 'home.english'|trans }}</a>
+                    <a class="btn btn-primary btn-lg" href="{{ path(app.request.get('_route'), app.request.get('_route_params')|merge({'_locale': 'fr'})) }}" role="button">{{ 'home.francais'|trans }}</a>
+                </p>
+            </div>
+        </div>
+
+
+    {% endblock %}
+
+

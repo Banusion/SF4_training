@@ -1,0 +1,10 @@
+app:
+  resource: ../src/Controller
+  type: annotation
+  prefix:
+    fr: '/fr'
+    en: '/en'
+
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index

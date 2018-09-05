@@ -1,0 +1,64 @@
+post:
+    action:
+        list:           "List"
+        show:           "Show"
+        update:         "Update"
+        create:         "Create"
+        delete:         "Delete"
+
+    list:
+        page_title:          "List of posts"
+        create:         "Create a post"
+        article_title:  "Title"
+        article_date:   "Date"
+        count:   "Count"
+
+    detail:
+        page_title:          "Post detail"
+        article_id:     "ID"
+        article_title:  "Title"
+        article_author: "Author"
+        article_date:   "Date"
+        article_description:   "Description"
+        article_text:   "Text"
+
+    update:
+        page_title:         "Update a post"
+        show:          "Show"
+        list:          "List"
+
+    create:
+        page_title:         "Create a post"
+
+    error:
+        min: "Too short !!!"
+
+
+author:
+    action:
+        list:           "List"
+        show:           "Show"
+        update:         "Update"
+        create:         "Create"
+        delete:         "Delete"
+
+    list:
+        page_title:          "List of authors"
+        create:         "Create an author"
+        author_firstname:  "Firstname"
+        author_lastname:  "Lastname"
+        count:          "Count"
+
+    detail:
+        page_title:          "Author detail"
+        author_id:     "ID"
+        author_firstname:  "Firstname"
+        author_lastname:  "Lastname"
+
+    update:
+        page_title:         "Update an author"
+        show:          "Show"
+        list:          "List"
+
+    create:
+        page_title:         "Create an author"
